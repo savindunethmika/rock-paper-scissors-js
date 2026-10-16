@@ -31,6 +31,8 @@
 
 >   ![Project Preview](./images/preview.png)
 
+[![Live Demo](https://img.shields.io/badge/LiveDemo-0F172A?style=for-the-badge&logo=googlechrome&logoColor=38BDF8)](https://rpsjsbysavindu.netlify.app/)
+
 ---
 
 ## 💻 Getting Started
@@ -43,14 +45,14 @@ No special installation or local server is required! You only need a modern web 
 
 1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/DevilSavi/rock-paper-scissors-js.git](https://github.com/DevilSavi/rock-paper-scissors-js.git)
+    git clone [https://github.com/savindunethmika/rock-paper-scissors-js.git](https://github.com/savindunethmika/rock-paper-scissors-js.git)
 
 2. **Navigate to the project directory:**
     ```bash
     cd rock-paper-scissors-js
 
 3. **Run the game:**
-    Open `rock-paper-scissors.html` directly in your browser, or use an extension like **Live Server** in VS Code.
+    Open `index.html` directly in your browser, or use an extension like **Live Server** in VS Code.
 
 ---
 
@@ -89,7 +91,7 @@ No special installation or local server is required! You only need a modern web 
 ```
 rock-paper-scissors-js/
 │
-├── rock-paper-scissors.html     # Main HTML structure
+├── index.html                   # Main HTML structure
 ├── style.css                    # Styles and layouts
 ├── script.js                    # Core game logic & event 
 |
