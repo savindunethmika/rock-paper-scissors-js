@@ -60,7 +60,7 @@ const resetScore = () => {
 
 const confirmResetScore = () => {
   let  paraElement = document.querySelector('.js-reset-score-confirm');
-  paraElement.innerHTML = '<p>Are you sure you want to reset the score? <button class="reset-confirm-button js-reset-yes-button">Yes</button><button class="reset-confirm-button js-reset-no-button">No</button></p>';
+  paraElement.innerHTML = '<p>Are you sure you want to reset the score?</p> <button class="reset-confirm-button js-reset-yes-button">Yes</button><button class="reset-confirm-button js-reset-no-button">No</button>';
 
   document.querySelector('.js-reset-yes-button')
   .addEventListener('click', () => {
