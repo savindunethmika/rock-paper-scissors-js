@@ -31,7 +31,7 @@
 
 >   ![Project Preview](./images/preview.png)
 
-[![Live Demo](https://img.shields.io/badge/LiveDemo-0F172A?style=for-the-badge&logo=googlechrome&logoColor=38BDF8)](https://rpsjsbysavindu.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/LiveDemo-0F172A?style=for-the-badge&logo=googlechrome&logoColor=38BDF8)]([https://rpsjsbysavindu.netlify.app/](https://savindunethmika-rock-paper-scissors-js.pages.dev/))
 
 ---
 
