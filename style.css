@@ -1,36 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(25, 25, 25);
   color: white;
   font-family: Arial;
+  margin: 0;
+  padding: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-text-size-adjust: 100%;
 }
 
 .title {
-  font-size: 30px;
+  font-size: clamp(22px, 6vw, 30px);
   font-weight: bold;
 }
 
+.moves-row,
+.actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .move-icon {
-  height: 50px;
+  height: clamp(32px, 9vw, 50px);
+  width: auto;
 }
 
 .move-button {
   background-color: transparent;
   border: 3px solid white;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  margin-right: 10px;
+  width: clamp(80px, 26vw, 120px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .result {
-  font-size: 25px;
+  font-size: clamp(20px, 5.5vw, 25px);
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: clamp(30px, 8vw, 50px);
 }
 
 .score {
-  margin-top: 60px;
+  margin-top: clamp(30px, 9vw, 60px);
+  overflow-wrap: anywhere;
 }
 
 .reset-score-button,
@@ -41,11 +65,44 @@ body {
   font-size: 15px;
   font-weight: bold;
   color: rgb(24, 24, 24);
-  padding: 10px 15px;
+  padding: 12px 18px;
+  min-height: 44px;
   border-radius: 50px;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .reset-confirm-button {
   margin-left: 10px;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .moves-row {
+    justify-content: space-between;
+  }
+
+  .actions-row {
+    flex-direction: column;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    width: 100%;
+  }
+
+  .reset-confirm-button {
+    margin: 8px 10px 0 0;
+  }
+}
+
+/* Large screens: a bit more breathing room */
+@media (min-width: 1024px) {
+  body {
+    padding-top: 32px;
+  }
 }
